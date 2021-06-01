@@ -14,7 +14,7 @@ use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\PropertyAccess\PropertyPath;
 use Symfony\Component\Form\FormConfigInterface;
 use Symfony\Component\Form\Test\FormInterface;
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 
 class DelegatingFilterListenerTest extends TestCase
 {

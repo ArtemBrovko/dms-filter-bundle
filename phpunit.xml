@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <phpunit bootstrap="vendor/autoload.php" colors="true" verbose="true">
 
+    <php>
+        <env name="SYMFONY_DEPRECATIONS_HELPER" value="600" />
+    </php>
     <testsuites>
         <testsuite name="DMS Filter Bundle">
             <directory>./src/DMS/Bundle/FilterBundle/Tests/</directory>

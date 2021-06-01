@@ -18,8 +18,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('dms_filter');
+        $treeBuilder = new TreeBuilder('dms_filter');
+        $rootNode = $treeBuilder->getRootNode();
 
         $rootNode->children()->booleanNode('auto_filter_forms')->defaultValue(true);
 
